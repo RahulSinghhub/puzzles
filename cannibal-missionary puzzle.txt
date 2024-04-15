@@ -1,0 +1,18 @@
+Q) In the missionaries and cannibals problem, three missionaries and three cannibals must cross a river using a boat which can carry at most two people, under the constraint that, for both banks, if there are missionaries present on the bank, they cannot be outnumbered by cannibals (if they were, the cannibals would eat the missionaries). The boat cannot cross the river by itself with no people on board.
+
+
+Ans--
+
+Game link
+https://javalab.org/en/boat_puzzle_en/
+
+missionaries (M) and cannibals(C) 
+
+ 0M , 0C and 3M , 3C
+0M , 2C (B) and 3M , 1C  send 2 Cannibals to left
+0M , 1C and 3M , 2C      send one cannibal from left to right 
+0M , 3C (B) and 3M , 0C  Now send the 2 remaining Cannibals to left 
+0M , 2C and 3M , 1C      Send 1 cannibal to the right
+2M , 2C (B) and 1M       send 2 missionaries to the left
+1M , 1C and 2M , 2C (B)  1C Send 1 missionary and 1 cannibal to right 
+Send 2 missionaries to left : 3M , 1C (B) and 0M , 2C Send 1 cannibal to right : 3M , 0C and 0M , 3C (B) Send 2 cannibals to left : 3M , 2C (B) and 0M , 1C Send 1 cannibal to right : 3M , 1C and 0M , 2C (B)’ Send 2 cannibals to left : 3M , 3C (B) and 0M , 0C
