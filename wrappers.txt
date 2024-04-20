@@ -1,0 +1,69 @@
+chocolate wrapper problem
+You have 15 Rs with you. You go to a shop and shopkeeper tells you price as 1 Rs per chocolate. He also tells you that you can get a chocolate in return of 3 wrappers. How many maximum chocolates you can eat?
+
+
+Answer: 22
+Buy and eat 15 chocolates
+Return 15 wrappers and get 5 more chocolates.
+Return 3 wrappers, get 1 chocolate and eat it (keep 2 wrappers)
+Now we have 3 wrappers. Return 3 and get 1 more chocolate.
+
+So total chocolates = 15 + 5 + 1 + 1
+
+program
+# Recursive Python3 program to find
+# maximum number of chocolates
+import math
+
+# Returns number of chocolates we can
+# have from given number of chocolates
+# and number of wrappers required to
+# get a chocolate.
+def countRec(choc, wrap):
+	
+	# If number of chocolates is less 
+	# than number of wrappers required.
+	if (choc < wrap):
+		return 0;
+
+	# We can immediately get newChoc
+	# using wrappers of choc.
+	newChoc = choc / wrap;
+
+	# Now we have "newChoc + choc%wrap" wrappers.
+	return newChoc + countRec(newChoc + choc %
+								wrap, wrap);
+
+# Returns maximum number of chocolates 
+# we can eat with given money, price 
+# of chocolate and number of wrappers 
+# required to get a chocolate.
+def countMaxChoco(money, price, wrap):
+	
+	# We can directly buy below 
+	# number of chocolates
+	choc = money / price;
+
+	# countRec returns number
+	# of chocolates we can
+	# have from given number 
+	# of chocolates
+	return math.floor(choc + countRec(choc, wrap));
+
+# Driver code
+
+# total money
+money = 15;
+	
+# cost of each candy
+price = 1; 
+	
+# no of wrappers needs to be
+wrap = 3 ; 
+	
+# exchanged for one chocolate.
+print(countMaxChoco(money, price, wrap));
+
+# This code is contributed by mits
+
+
