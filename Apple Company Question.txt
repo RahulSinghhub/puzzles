@@ -1,0 +1,39 @@
+Q) There are 100 coins on a table 100 of them are placed on a table.
+   20 tails and 80 heads . When they are mixed unevenly then we need 
+to place the tails in such a way that when we divide them into 2 groups 
+we get both side same number of tails 
+
+
+Alternate question as asked in for easier interviews
+
+Q)There are 10 coins on a table 2 of them are placed on a table.
+   20 tails and 80 heads . When they are mixed unevenly then we need 
+to place the tails in such a way that when we divide them into 2 groups 
+we get both side same number of tails 
+
+Ans 
+
+h   h    h   h    h    t   h    h    t    h
+
+step 2
+
+take 2 coins aside be it any coins
+
+possible combinations
+
+h h
+t t
+h t
+
+turn them 
+
+t t
+h h
+t h
+
+tails left on both sides
+0 0
+2 2
+1 1
+
+so always the coins left would be the number of tails available  for apple question the answer will be 20
