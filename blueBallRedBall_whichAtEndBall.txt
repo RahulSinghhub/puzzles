@@ -1,0 +1,26 @@
+Q
+There is one sack which has 21 blue balls and 23 red balls 
+22 balls are placed outside the sack
+you can take out two balls from the sack as many times as you want
+you want to find the colour of  last ball remaining 
+condition 1 is if you take out two same colour balls then you need to put one red ball from outside into the sack
+condition 2 is if balls not of same colour then place the blue ball back inside the sack
+
+ans - 
+at last blue colour ball remain
+because lets start with taking less number ball 
+
+Sack____________________
+3 - blue
+
+5 - red 
+________________________
+
+4 red
+
+
+two same
+3   5     4
+.
+.
+.
