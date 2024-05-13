@@ -21,6 +21,14 @@ ________________________
 
 two same
 3   5     4
-.
+2   5     3
+1   5     2
+1   4     2
+2   3     1
+1   3
+2   2
+3   1
+.....
+1   0    blue ball remains everytime so we go with blue as option 
 .
 .
